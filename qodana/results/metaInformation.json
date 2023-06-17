@@ -1,0 +1,19 @@
+{
+  "total": 10,
+  "tools inspection": {
+    "Code Inspection": 10
+  },
+  "linter": "QDJVMC",
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/nixel2007/bsl-language-server.git",
+        "revisionId": "884c97c51ffd6b770e4d2a49ea98273308f6fae4",
+        "branch": "develop"
+      }
+    },
+    "deviceId": "200820300000000-8ad7-8bda-db84-f82edf24b537",
+    "jobUrl": "https://github.com/nixel2007/bsl-language-server/actions/runs/5296600438",
+    "repoUrl": "https://github.com/nixel2007/bsl-language-server.git"
+  }
+}
