@@ -1,8 +1,11 @@
-# Duplicated conditions in If...Then...ElseIf... statements
+# Duplicated conditions in If...Then...ElseIf... statements (IfElseDuplicatedCondition)
+
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
 
 **If...Then...ElseIf...** statement should not have duplicated conditions.
 
-Example:
+## Examples
 
 ```bsl
 If p = 0 Then

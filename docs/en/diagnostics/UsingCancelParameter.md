@@ -1,34 +1,42 @@
-# Using parameter «Cancel»
+# Using parameter "Cancel" (UsingCancelParameter)
 
-1. In event handlers of object's modules, record sets, forms and etc. using parameter "Cancel" (ПриЗаписи, ОбработкаПроверкиЗаполнения, ТоварыПередНачаломДобавления and etc.) it should not be assigned value "false".
-    This is due to the fact, that in code of event handlers the parameter "Cancel" can be set in several consecutive checks (or in several subscriptions on the same event).In this case, by the time the next check is performed, the parameter "Cancel" can already be set to True, and you can set it to False by mistake.In addition when modifying configuration the number of such checks can increase.
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
 
-#### Incorrect:
+In event handlers of object's modules, record sets, forms and etc. using parameter "Cancel" (for example BeforeWrite and etc.) it should not be assigned value "false".  
+This is due to the fact, that in code of event handlers the parameter "Cancel" can be set in several consecutive checks (or in several subscriptions on the same event). In this case, by the time the next check is performed, the Cancel parameter may already contain the True value, and you can erroneously reset it back to False.  
+In addition, with configuration improvements, the number of these checks may increase.
 
-```
-Процедура ОбработкаПроверкиЗаполнения(Cancel, ПроверяемыеРеквизиты)
+## Examples
+
+### Incorrect
+
+```bsl
+Procedure BeforeWrite(Cancel)
   ...
-  Cancel = ЕстьОшибкиЗаполнения();
+  Cancel = CheckName();
   ...
-КонецПроцедуры
+EndProcedure
 ```
 
-#### Correct:
+### Correct
 
-```
-Процедура ОбработкаПроверкиЗаполнения(Cancel, ПроверяемыеРеквизиты)
+```bsl
+Procedure BeforeWrite(Cancel)
   ...
-  Если ЕстьОшибкиЗаполнения() Тогда
+  If CheckName() Then
    Cancel = True;
-  КонецЕсли;
+  EndIf;
   ...
-КонецПроцедуры
+EndProcedure
 ```
 
 or
 
-```
-Cancel = Cancel Или ЕстьОшибкиЗаполнения();
+```bsl
+Cancel = Cancel or CheckName();
 ```
 
-Reference: [Standart: Modules texts(RU)](https://its.1c.ru/db/v8std#content:2149184335:hdoc)
+## Sources
+
+* [Standart: Working with the "Cancel" option in event handlers (RU)](https://its.1c.ru/db/v8std#content:686:hdoc)

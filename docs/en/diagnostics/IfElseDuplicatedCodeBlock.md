@@ -1,8 +1,11 @@
-# Duplicated code blocks in If...Then...ElseIf... statements
+# Duplicated code blocks in If...Then...ElseIf... statements (IfElseDuplicatedCodeBlock)
+
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
 
 **If...Then...ElseIf...** statement should not have duplicated code blocks.
 
-Example:
+## Examples
 
 ```bsl
 If p = 0 Then

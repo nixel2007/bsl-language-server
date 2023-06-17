@@ -1,81 +1,86 @@
-# Canonical Keyword Writing
+# Canonical keyword writing (CanonicalSpellingKeywords)
 
-A built-in language constructs, keywords must be writte canonically.
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
 
-**Keywords**
+A built-in language constructs, keywords must be written canonically.
 
-RU | EN
---- | ---
-ВызватьИсключение | Raise
-Выполнить | Execute
-ДобавитьОбработчик | AddHandler
-Для | For
-Если | If
-Знач | Val
-И | AND, and
-Из | In
-ИЛИ, Или | OR, Or
-Иначе | Else
-ИначеЕсли | ElsIf
-Исключение | Except
-Истина | True
-Каждого, каждого | Each, each
-КонецЕсли | EndIf
-КонецПопытки | EndTry
-КонецПроцедуры | EndProcedure
-КонецФункции | EndFunction
-КонецЦикла | EndDo
-НЕ, Не | NOT, Not
-Неопределено | Undefined
-Перейти | Goto
-Перем | Var
-По | For
-Пока | WHile
-Попытка | Try
-Процедура | Procedure
-Прервать | Break
-Продолжить | Continue
-Тогда | Then
-Цикл | Do
-УдалитьОбработчик | RemoveHandler
-Функция | Function
-Экспорт | Export
+### Keywords
 
-**Preprocessor Instructions**
+| RU                 | EN            |
+|--------------------|---------------|
+| ВызватьИсключение  | Raise         |
+| Выполнить          | Execute       |
+| ДобавитьОбработчик | AddHandler    |
+| Для                | For           |
+| Если               | If            |
+| Знач               | Val           |
+| И                  | AND, and      |
+| Из                 | In            |
+| ИЛИ, Или           | OR, Or        |
+| Иначе              | Else          |
+| ИначеЕсли          | ElsIf         |
+| Исключение         | Except        |
+| Истина             | True          |
+| Каждого, каждого   | Each, each    |
+| КонецЕсли          | EndIf         |
+| КонецПопытки       | EndTry        |
+| КонецПроцедуры     | EndProcedure  |
+| КонецФункции       | EndFunction   |
+| КонецЦикла         | EndDo         |
+| НЕ, Не             | NOT, Not      |
+| Неопределено       | Undefined     |
+| Перейти            | Goto          |
+| Перем              | Var           |
+| По                 | For           |
+| Пока               | While         |
+| Попытка            | Try           |
+| Процедура          | Procedure     |
+| Прервать           | Break         |
+| Продолжить         | Continue      |
+| Тогда              | Then          |
+| Цикл               | Do            |
+| УдалитьОбработчик  | RemoveHandler |
+| Функция            | Function      |
+| Экспорт            | Export        |
 
-RU | EN
---- | ---
-ВебКлиент | WebClient
-ВнешнееСоединение | ExternalConnection
-Если | If
-И | AND, And
-ИЛИ, Или | OR, Or
-Иначе | Else
-ИначеЕсли | ИначеЕсли
-КонецЕсли | EndIf
-КонецОбласти | EndRegion
-Клиент | Client
-МобильноеПриложениеКлиент | MobileAppClient
-МобильноеПриложениеСервер | MobileAppServer
-МобильныйКлиент | MobileClient
-НаКлиенте | AtClient
-НаСервере | AtServer
-НЕ, Не | NOT, Not
-Область | Region
-Сервер | Server
-Тогда | Then
-ТолстыйКлиентОбычноеПриложение | ThickClientOrdinaryApplication
-ТолстыйКлиентУправляемоеПриложение | ThickClientManagedApplication
-ТонкийКлиент | ThinClient
+### Preprocessor instrutions
 
-**Compilation directives**
+| RU                                 | EN                             |
+|------------------------------------|--------------------------------|
+| ВебКлиент                          | WebClient                      |
+| ВнешнееСоединение                  | ExternalConnection             |
+| Если                               | If                             |
+| И                                  | AND, And                       |
+| ИЛИ, Или                           | OR, Or                         |
+| Иначе                              | Else                           |
+| ИначеЕсли                          | ElsIf                          |
+| КонецЕсли                          | EndIf                          |
+| КонецОбласти                       | EndRegion                      |
+| Клиент                             | Client                         |
+| МобильноеПриложениеКлиент          | MobileAppClient                |
+| МобильноеПриложениеСервер          | MobileAppServer                |
+| МобильныйКлиент                    | MobileClient                   |
+| НаКлиенте                          | AtClient                       |
+| НаСервере                          | AtServer                       |
+| НЕ, Не                             | NOT, Not                       |
+| Область                            | Region                         |
+| Сервер                             | Server                         |
+| Тогда                              | Then                           |
+| ТолстыйКлиентОбычноеПриложение     | ThickClientOrdinaryApplication |
+| ТолстыйКлиентУправляемоеПриложение | ThickClientManagedApplication  |
+| ТонкийКлиент                       | ThinClient                     |
 
-RU | EN
---- | ---
-НаКлиенте | AtClient
-НаСервере | AtServer
-НаСервереБезКонтекста | AtServerNoContext
-НаКлиентеНаСервереБезКонтекста | AtClientAtServerNoContext
-НаКлиентеНаСервере | AtClientAtServer
+### Compilation directives
 
-Источник: [Standart: Modules texts(RU)](https://its.1c.ru/db/v8std/content/2149184090/hdoc)
+| RU                             | EN                        |
+|--------------------------------|---------------------------|
+| НаКлиенте                      | AtClient                  |
+| НаСервере                      | AtServer                  |
+| НаСервереБезКонтекста          | AtServerNoContext         |
+| НаКлиентеНаСервереБезКонтекста | AtClientAtServerNoContext |
+| НаКлиентеНаСервере             | AtClientAtServer          |
+
+## Sources
+
++ [Standard: General requirements (RU)](https://its.1c.ru/db/v8std#content:441:hdoc)

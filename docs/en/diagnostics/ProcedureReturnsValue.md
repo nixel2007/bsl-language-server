@@ -1,3 +1,6 @@
-# Procedure should not return Value
+# Procedure should not return Value (ProcedureReturnsValue)
 
-The diagnostics finds procedures with returning Values.
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
+
+`Procedure`, unlike a `Function` cannot return values. This diagnostic finds procedures where there is a `Return` statement with a value.

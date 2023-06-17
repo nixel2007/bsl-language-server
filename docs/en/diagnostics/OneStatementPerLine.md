@@ -1,8 +1,12 @@
-# One statement per line
+# One statement per line (OneStatementPerLine)
 
-Code should follow principles "one statement per line". Several statements are acceptable in case of same-type assignment operators.
-For example:
+<!-- Блоки выше заполняются автоматически, не трогать -->
+## Description
 
-НачальныйИндекс = 0; Индекс = 0; Результат = 0;
+Module texts are formatted according to the "one statement in one line" principle. Several statements are acceptable in case of same-type assignment operators. For example:
 
-Reference: [Standard: Modules texts(RU)](https://its.1c.ru/db/v8std#content:-2145783191:hdoc)
+`StartIndex = 0; Index = 0; Result = 0;`
+
+## Sources
+
+* Source: [Standard: Modules (RU)](https://its.1c.ru/db/v8std#content:456:hdoc)
